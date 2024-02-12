@@ -1,17 +1,19 @@
 {
   "name": "projet-tailwind-parcel",
   "version": "1.0.0",
-  "source" : "src/index.html",
+  "source": "src/index.html",
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel",
-    "build": "parcel build --dist-dir public"
+    "build": "parcel build --dist-dir public --public-url ./",
+    "deploy" : "gh-pages -d public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "parcel": "^2.11.0",
     "postcss": "^8.4.35",
     "tailwindcss": "^3.4.1"
